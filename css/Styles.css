@@ -1,0 +1,149 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header{
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.titulo{
+    font-size: 2.5rem;
+}
+
+/* Menú */
+nav{
+    background: #212529;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li{
+    margin: 0 15px;
+}
+
+nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background: #0d6efd;
+    border-radius: 5px;
+}
+
+/* Contenido principal */
+main{
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Secciones */
+section{
+    background: white;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+section h2{
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+/* Imagen principal */
+section img{
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Servicios */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article{
+    flex: 1;
+    min-width: 280px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+article:hover{
+    transform: translateY(-5px);
+}
+
+article img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+article h3{
+    margin: 15px 0;
+    color: #0d6efd;
+}
+
+/* Mapa */
+iframe{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer{
+    background: #212529;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    .titulo{
+        font-size: 2rem;
+    }
+
+    article{
+        min-width: 100%;
+    }
+}
